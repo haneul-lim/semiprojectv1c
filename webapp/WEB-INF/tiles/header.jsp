@@ -6,17 +6,17 @@
 </header>
 <nav>
     <ul>
-       <li><a href="/index.jsp">Home</a></li>
-       <li><a href="/join.jsp">회원가입</a></li>
+       <li><a href="/mvc/index">Home</a></li>
+       <li><a href="/mvc/join">회원가입</a></li>
        
        <c:if test="${empty sessionScope.userid}">
-       <li><a href="/login.jsp">로그인</a></li></c:if>
+       <li><a href="/mvc/login">로그인</a></li></c:if>
        
        <c:if test="${not empty sessionScope.userid}">
-       <li><a href="/logout.jsp">로그아웃</a></li></c:if>
+       <li><a href="/mvc/logout">로그아웃</a></li></c:if>
        
-       <li><a href="/board/list.jsp">게시판</a></li>
-       <li><a href="/myinfo.jsp">회원정보</a></li>
+       <li><a href="/mvc/board/list">게시판</a></li>
+       <li><a href="/mvcs/myinfo">회원정보</a></li>
     </ul>
     <hr>
 </nav>
